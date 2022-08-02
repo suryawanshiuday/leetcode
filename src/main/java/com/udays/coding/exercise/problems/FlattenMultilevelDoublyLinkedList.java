@@ -96,7 +96,7 @@ public class FlattenMultilevelDoublyLinkedList {
         return out.next;
     }
 
-    public class Node {
+    private class Node {
 
         public int val;
         public Node next;
