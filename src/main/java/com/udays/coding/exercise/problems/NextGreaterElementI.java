@@ -1,7 +1,6 @@
 package com.udays.coding.exercise.problems;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -45,7 +44,7 @@ import java.util.Stack;
  * Follow up: Could you find an O(nums1.length + nums2.length) solution?
  */
 
-public class NextGreateElementI {
+public class NextGreaterElementI {
 
     //Time complexity: O(m+n) but nums1 is subset of nums2 so O(n)
     //Space complexity: O(n)
@@ -54,7 +53,7 @@ public class NextGreateElementI {
 
         //keep pushing in stack until we find greater number than top of stack
         //when we find it, that is next greater for all elements in stack smaller than that number
-        //pop until  top of stack is smaller than current greater number
+        //pop until top of stack is smaller than current greater number
         Stack<Integer> stack = new Stack();
         HashMap<Integer, Integer> map = new HashMap();
 
