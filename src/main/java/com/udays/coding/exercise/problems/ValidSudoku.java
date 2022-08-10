@@ -94,6 +94,7 @@ public class ValidSudoku {
                     cols.get(c).add(current);
 
                 //check if no exists in row
+                //interesting equation
                 //r=4, c=7 boxIndex=(4/3)*3+(7/3)=(1)*3+2=5
                 int boxIndex = (r/3)*3 + (c/3);
                 if(boxes.get(boxIndex).contains(current))
